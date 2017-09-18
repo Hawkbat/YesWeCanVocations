@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle');
+
+html, body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 16pt;
+	background-color: #ccc;
+	background-image: url("bg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1, b {
+	color: #AF0000;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+header > h1 {
+	margin-bottom: 0;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+}
+
+aside {
+	width: 320px;
+	float: right;
+	margin-right: -60px;
+	padding: 10px 20px;
+	background-color: #ddd;
+}
+
+article {
+	box-sizing: border-box;
+	padding: 20px;
+	min-height: 100%;
+	width: 100%;
+	max-width: 960px;
+	background-color: white;
+	margin: 40px 0px;
+}
+
+h2 {
+	width: 100%;
+	margin: 10px -20px;
+	padding: 10px 60px 10px 20px;
+	background-color: #B00000;
+	color: white;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.button, .download {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.button {
+	color: white;
+	background-color: #B00000;
+	border-bottom: 2px solid lightgray;
+	text-decoration: none;
+}
+
+.button:hover {
+	background-color: #800000;
+}
+
+.button:active {
+	background-color: #600000;
+	border-bottom: 0;
+}
+
+.download {
+	color: #B00000;
+	border: 2px solid #B00000;
+}
+
+.download::after {
+	display: inline-block;
+	content: " ";
+	width: 24px;
+	height: 24px;
+	background-image: url('pdf_24x24.png');
+}
+
+@media (max-width: 1040px) {
+	
+	article {
+		margin: 0;
+	}
+
+	h2 {
+		padding-right: 20px;
+	}
+
+	aside {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+}
