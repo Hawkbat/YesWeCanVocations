@@ -160,13 +160,29 @@ select {
 	font-family: inherit;
 }
 
+.lg {
+	display: block;
+}
+
+.sm {
+	display: none;
+}
+
 @media (max-width: 1020px) {
+	.lg {
+		display: none;
+	}
+
+	.sm {
+		display: block;
+	}
+
 	article {
 		margin: 0;
 	}
 
 	h2 {
-		padding-right: 20px;
+		padding-right: 10px;
 	}
 
 	aside {
