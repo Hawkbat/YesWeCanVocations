@@ -27,6 +27,11 @@ h1, h2, h3 {
 	margin-top: 0;
 }
 
+header {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
 header > h1 {
 	margin-bottom: 0;
 }
@@ -79,7 +84,7 @@ article {
 	padding: 10px;
 	min-height: 100%;
 	width: 100%;
-	max-width: 960px;
+	max-width: 900px;
 	background-color: white;
 	margin: 40px 0px;
 }
@@ -103,6 +108,13 @@ h4 {
 	color: white;
 	font-size: 24px;
 	font-weight: bold;
+}
+
+.logo {
+	display: block;
+	float: right;
+	width: 150px;
+	margin: -10px;
 }
 
 .button, select {
@@ -148,8 +160,7 @@ select {
 	font-family: inherit;
 }
 
-@media (max-width: 1075px) {
-	
+@media (max-width: 1020px) {
 	article {
 		margin: 0;
 	}
@@ -162,5 +173,6 @@ select {
 		width: auto;
 		float: none;
 		margin-right: 0;
+		margin-left: 0;
 	}
 }
