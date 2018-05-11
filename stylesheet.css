@@ -12,7 +12,7 @@ body {
 	align-items: center;
 	min-height: 100%;
 	font-family: 'News Cycle', sans-serif;
-	font-size: 16pt;
+	font-size: 20px;
 	background-color: #ccc;
 	background-image: url("bg.jpg");
 	background-size: cover;
@@ -40,14 +40,43 @@ footer {
 aside {
 	width: 320px;
 	float: right;
+	margin: 10px;
 	margin-right: -60px;
-	padding: 10px 20px;
+	padding: 5px 10px;
 	background-color: #ddd;
+	font-size: 18px;
+}
+
+p {
+	margin: 5px;
+}
+
+blockquote {
+	font-size: 18px;
+	background-color: #eee;
+	padding: 5px;
+	margin: 10px 0px;
+}
+
+blockquote > p {
+	margin-top: 0;
+}
+
+cite {
+	display: block;
+	position: relative;
+	margin-left: 50px;
+}
+
+cite::before {
+	position: absolute;
+	content: "―";
+	left: -25px;
 }
 
 article {
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 10px;
 	min-height: 100%;
 	width: 100%;
 	max-width: 960px;
@@ -61,22 +90,35 @@ h2 {
 	padding: 10px 60px 10px 20px;
 	background-color: #B00000;
 	color: white;
-	font-size: 20pt;
+	font-size: 24px;
 	font-weight: bold;
 }
 
-.button, .download {
-	display: inline-block;
-	padding: 10px 20px;
-	border-radius: 5px;
+h4 {
+	width: 100%;
+	margin: -10px -10px 0px -10px;
+	padding: 0;
+	padding-left: 20px;
+	background-color: #999;
+	color: white;
+	font-size: 24px;
 	font-weight: bold;
+}
+
+.button, select {
+	margin-bottom: 5px;
 }
 
 .button {
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	
 	color: white;
 	background-color: #B00000;
 	border-bottom: 2px solid lightgray;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .button:hover {
@@ -88,20 +130,25 @@ h2 {
 	border-bottom: 0;
 }
 
-.download {
-	color: #B00000;
-	border: 2px solid #B00000;
-}
-
-.download::after {
+.button.download::after {
 	display: inline-block;
 	content: " ";
 	width: 24px;
 	height: 24px;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-image: url('pdf_24x24.png');
 }
 
-@media (max-width: 1040px) {
+select {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 5px;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+@media (max-width: 1075px) {
 	
 	article {
 		margin: 0;
